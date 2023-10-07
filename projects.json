@@ -1,9 +1,21 @@
-{
-    "title": "",
-    "date" : "",
-    "description": "",
-    "collaborators": ["",""],
-    "creativeProcess": "",
-    "creativeProcessImages": ["",""],
-    "mainImages": ["",""]
-}
+[
+    {
+        "title": "",
+        "date" : "",
+        "description": "",
+        "collaborators": ["",""],
+        "creativeProcess": "",
+        "creativeProcessImages": ["",""],
+        "mainImages": ["",""]
+    },
+    {
+        "title": "",
+        "date" : "",
+        "description": "",
+        "collaborators": ["",""],
+        "creativeProcess": "",
+        "creativeProcessImages": ["",""],
+        "mainImages": ["",""]
+
+    }
+]
