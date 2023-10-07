@@ -1,19 +1,24 @@
-// import { useMediaQuery } from '@mui/material';
-import { createContext } from 'react';
+import { useMediaQuery } from '@mui/material';
+import { createContext, useState } from 'react';
 
 export const UseWebContext = createContext();
 
 export const WebContext = ({ children }) => {
-    // const isMobile=useMediaQuery("(max-width:640px)")
-    // const isTablet=useMediaQuery("(min-width:641px)")
-    // const isDesktop=useMediaQuery("(min-width:1025px)")
-    // const isBigDesktop=useMediaQuery("(min-width:1281px)")
+    const isMobile=useMediaQuery("(max-width:390px)")
+    const isTablet=useMediaQuery("(max-width:768px)")
 
-    // const bannersDesktop=useMediaQuery("(min-width:801px)")
-
+    const [language, setLanguage] = useState("es")
+    const [openLanguageBox, setOpenLanguageBox] = useState(false)
 
     return (
-        <UseWebContext.Provider value={{}}>
+        <UseWebContext.Provider value={{
+            language,
+            setLanguage,
+            openLanguageBox,
+            setOpenLanguageBox,
+            isMobile,
+            isTablet
+        }}>
             {children}
         </UseWebContext.Provider>
     );
