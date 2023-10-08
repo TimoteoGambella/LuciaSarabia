@@ -4,6 +4,13 @@ import { Gallery } from "../components/Gallery";
 import arrow from "../assets/arrow-language.svg"
 import { UseWebContext } from "../context/WebContext";
 
+import {collaboratorLogo} from "../data/collaborators"
+import {projectsPhotos} from "../data/projectsPhotos"
+
+import dataIlustrations from "./projects.json"
+
+
+
 export function Home () {
     const {isTablet, isMobile} = useContext(UseWebContext);
 
@@ -36,23 +43,27 @@ export function Home () {
                 <div className="section-tablet">
                     <div className="principal" onClick={()=>setSectionOptions(!sectionOptions)}>
                         <h2>
-                            {section==="il"?"ILUSTRACIÓN":section==="ed"?"EDITORIAL":section==="mu"&&"MURAL"}
+                            {section==="il"?"Ilustración":section==="ed"?"Editorial":section==="mu"&&"Mural"}
                         </h2>
                         <img src={arrow} alt="ARROW" />
                     </div>
                     {sectionOptions && 
                         <div className="box">
                             <h2 onClick={()=>{setSection(section==="il"?"ed":section==="ed"?"mu":section==="mu"&&"il");setSectionOptions(!sectionOptions)}}>
-                                {section==="il"?"EDITORIAL":section==="ed"?"MURAL":section==="mu"&&"ILUSTRACIÓN"}
+                                {section==="il"?"Editorial":section==="ed"?"Mural":section==="mu"&&"Ilustración"}
                             </h2>
                             <h2 onClick={()=>{setSection(section==="il"?"mu":section==="ed"?"il":section==="mu"&&"ed");setSectionOptions(!sectionOptions)}}>
-                                {section==="il"?"MURAL":section==="ed"?"ILUSTRACIÓN":section==="mu"&&"EDITORIAL"}
+                                {section==="il"?"Mural":section==="ed"?"Ilustración":section==="mu"&&"Editorial"}
                             </h2>
                         </div>
                     }
                 </div>
             }
-            <Gallery /> 
+            <Gallery 
+                data={section==="il"&&dataIlustrations}
+                photos={projectsPhotos}
+                section={section}
+            /> 
         </div>
     )
 }

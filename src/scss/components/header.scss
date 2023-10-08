@@ -14,17 +14,20 @@
         align-items: center;
         justify-content: flex-start;
         gap: 12px;
+        cursor: pointer;
     }
     .logo{
         flex-grow: 1;
         max-width: 440px;
         max-height: 178px;
+        cursor: pointer;
     }
     nav{
         display: flex;
         align-items: center;
         justify-content: flex-end;
         gap: 32px;
+        cursor: pointer;
         div{
             display: flex;
             align-items: center;
@@ -72,6 +75,7 @@
         align-items: center;
         justify-content: center;
         gap: 5px;
+        cursor: pointer;
     }
 }
 

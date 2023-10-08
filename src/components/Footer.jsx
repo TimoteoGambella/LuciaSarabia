@@ -8,10 +8,15 @@ import { UseWebContext } from "../context/WebContext";
 
 export function Footer () {
     const {isTablet, isMobile} = useContext(UseWebContext);
-
+    
     return(
-        <div className={`footer-container ${isTablet&&"tablet"}`}>
-            <img src={isTablet ? logoTablet : logo} alt="LOGO" />
+        <div style={{background:window.location.pathname.startsWith("/proj")&&"#F9F8F4"}} className={`footer-container ${isTablet&&"tablet"}`}>
+            <img onClick={()=>{
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }} src={isTablet ? logoTablet : logo} alt="LOGO" />
 
             {!isTablet &&
                 <p>Made with <span>♥</span> by <span>Erick Magallán</span></p>
@@ -27,7 +32,7 @@ export function Footer () {
 
             <div className="networks">
                 {/* <img style={{width:isTablet&&"16px"}} src={linkedin} alt="LINKEDIN" /> */}
-                <img onClick={()=>"https://www.instagram.com/luciasarabiaaa/"} style={{width:isTablet&&"16px"}} src={instagram} alt="INSTAGRAM" />
+                <img onClick={()=>window.open("https://www.instagram.com/luciasarabiaaa/")} style={{width:isTablet&&"16px"}} src={instagram} alt="INSTAGRAM" />
             </div>
         </div>
     )

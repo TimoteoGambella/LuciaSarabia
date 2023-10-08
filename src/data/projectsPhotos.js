@@ -1,4 +1,3 @@
-
 import project1foto1 from '../assets/ilustracion/postales/1.JPG';
 import project1foto2 from '../assets/ilustracion/postales/2.JPG';
 import project1foto3 from '../assets/ilustracion/postales/3.JPG';
@@ -42,7 +41,7 @@ import project3foto8 from '../assets/ilustracion/menus/8.jpeg';
 import project3foto9 from '../assets/ilustracion/menus/9.jpeg';
 
 import project4foto1 from '../assets/ilustracion/logotipo/1.jpeg';
-import project4foto2 from '../assets/ilustracion/logotipo/2.jpeg';
+import project4foto2 from '../assets/ilustracion/logotipo/2.png';
 import project4foto3 from '../assets/ilustracion/logotipo/3.jpeg';
 import project4foto4 from '../assets/ilustracion/logotipo/4.jpeg';
 import project4foto5 from '../assets/ilustracion/logotipo/5.jpeg';
@@ -115,16 +114,17 @@ import project12foto10 from '../assets/ilustracion/imagen_de_identidad_la_ola_co
 import project12foto11 from '../assets/ilustracion/imagen_de_identidad_la_ola_continua/11.png';
 import project12foto12 from '../assets/ilustracion/imagen_de_identidad_la_ola_continua/12.png';
 
-export const projectsPhotos = {Postales : [project1foto1, project1foto2, project1foto3, project1foto4, project1foto5, project1foto6, project1foto7, project1foto8, project1foto9, project1foto10],
-                                Mercancía : [project2foto1, project2foto2, project2foto3, project2foto4, project2foto5, project2foto6, project2foto7, project2foto8, project2foto9, project2foto10, project2foto11, project2foto12, project2foto13, project2foto14, project2foto15, project2foto16, project2foto17, project2foto18, project2foto19, project2foto20],
-                                Menús : [project3foto1, project3foto2, project3foto3, project3foto4, project3foto5, project3foto6, project3foto7, project3foto8, project3foto9],
-                                Logotipo : [project4foto1, project4foto2, project4foto3, project4foto4, project4foto5, project4foto6],
-                                Entrada | Suchitlán : [project5foto1, project5foto2, project5foto3],
-                                Calendarios : [project6foto1, project6foto2, project6foto3, project6foto4, project6foto5, project6foto6, project6foto7, project6foto8],
-                                Colección de Sketchbooks | Botanicum : [project7foto1, project7foto3, project7foto3, project7foto4, project7foto5, project7foto6, project7foto7, project7foto8, project7foto9, project7foto10, project7foto11, project7foto12, project7foto13, project7foto14],
-                                Proyecto Final de Diplomado | El lugar de las flores : [project8foto1, project8foto2, project8foto3, project8foto4, project8foto5, project8foto6],
-                                Tarjetas de Proximidad : [project9foto1, project9foto2, project9foto3],
-                                Entrada | Pablo medita : [project10foto1, project10foto2, project10foto3, project10foto4, project10foto5],
-                                Ciudad : [project11foto1, project11foto2, project11foto3, project11foto4, project11foto5, project11foto6, project11foto7, project11foto8],
-                                Imagen de Identidad | La Ola Continúa : [project12foto1, project12foto2, project12foto3,project12foto4, project12foto5, project12foto6, project12foto7, project12foto8, project12foto9, project12foto10, project12foto11, project12foto12]
-                                }
+export const projectsPhotos = {
+    0 : [project1foto1, project1foto2, project1foto3, project1foto4, project1foto5, project1foto6, project1foto7, project1foto8, project1foto9, project1foto10],
+    1 : [project2foto1, project2foto2, project2foto3, project2foto4, project2foto5, project2foto6, project2foto7, project2foto8, project2foto9, project2foto10, project2foto11, project2foto12, project2foto13, project2foto14, project2foto15, project2foto16, project2foto17, project2foto18, project2foto19, project2foto20],
+    2 : [project3foto1, project3foto2, project3foto3, project3foto4, project3foto5, project3foto6, project3foto7, project3foto8, project3foto9],
+    3 : [project4foto1, project4foto2, project4foto3, project4foto4, project4foto5, project4foto6],
+    4 : [project5foto1, project5foto2, project5foto3],
+    5 : [project6foto1, project6foto2, project6foto3, project6foto4, project6foto5, project6foto6, project6foto7, project6foto8],
+    6 : [project7foto1, project7foto2, project7foto3, project7foto3, project7foto4, project7foto5, project7foto6, project7foto7, project7foto8, project7foto9, project7foto10, project7foto11, project7foto12, project7foto13, project7foto14],
+    7 : [project8foto1, project8foto2, project8foto3, project8foto4, project8foto5, project8foto6],
+    8 : [project9foto1, project9foto2, project9foto3],
+    9 : [project10foto1, project10foto2, project10foto3, project10foto4, project10foto5],
+    10 : [project11foto1, project11foto2, project11foto3, project11foto4, project11foto5, project11foto6, project11foto7, project11foto8],
+    11 : [project12foto1, project12foto2, project12foto3,project12foto4, project12foto5, project12foto6, project12foto7, project12foto8, project12foto9, project12foto10, project12foto11, project12foto12]
+}
