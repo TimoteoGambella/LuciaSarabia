@@ -4,17 +4,21 @@ import { Gallery } from "../components/Gallery";
 import arrow from "../assets/arrow-language.svg"
 import { UseWebContext } from "../context/WebContext";
 
-import {collaboratorLogo} from "../data/collaborators"
-import {projectsPhotos} from "../data/projectsPhotos"
+import {projectsPhotos} from "../data/projectsPhotos";
+import {projectsPhotos2} from "../data/projects2Photos";
+import {projectsPhotos3} from "../data/projects3Photos";
 
-import dataIlustrations from "./projects.json"
-
+import dataIlustrations from "./projects.json";
+import dataEditorial from "./projects2.json";
+import dataMural from "./projects3.json"
+import { useParams } from "react-router-dom";
 
 
 export function Home () {
     const {isTablet, isMobile} = useContext(UseWebContext);
+    let { type } = useParams();
 
-    const [section, setSection] = useState("il")
+    const [section, setSection] = useState(type!==undefined?type:"il")
 
     const [sectionOptions, setSectionOptions] = useState(false)
 
@@ -60,8 +64,8 @@ export function Home () {
                 </div>
             }
             <Gallery 
-                data={section==="il"&&dataIlustrations}
-                photos={projectsPhotos}
+                data={section==="il"?dataIlustrations:section==="ed"?dataEditorial:dataMural}
+                photos={section==="il"?projectsPhotos:section==="ed"?projectsPhotos2:projectsPhotos3}
                 section={section}
             /> 
         </div>

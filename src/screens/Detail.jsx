@@ -1,11 +1,13 @@
 import { useNavigate, useParams } from "react-router-dom";
 
 import dataIlustrations from "./projects.json"
-// import dataIlustrations from "./projects.json"
-// import dataIlustrations from "./projects.json"
+import dataEditorial from "./projects2.json";
+import dataMural from "./projects3.json"
 
 import {collaboratorLogo} from "../data/collaborators"
 import {projectsPhotos} from "../data/projectsPhotos"
+import {projectsPhotos2} from "../data/projects2Photos";
+import {projectsPhotos3} from "../data/projects3Photos";
 
 import backArrow from "../assets/backArrow.svg"
 
@@ -13,19 +15,21 @@ export function Detail () {
     let { type, id } = useParams();
     const navigate = useNavigate();
 
+    const data = type==="il"?dataIlustrations:type==="ed"?dataEditorial:dataMural
+
     return (
         <div className="detail-container">
-            <div className="backTo" onClick={()=>navigate(-1)}>
+            <div className="backTo" onClick={()=>navigate(`/${type}`)}>
                 <img src={backArrow} alt="BACK" />
                 <p>Volver a <span>{type==="il"?"Ilustración":type==="ed"?"Editorial":type==="mu"&&"Mural"}</span></p>
             </div>
             <div className="box">
                 <div className="photos">
-                    {(type==="il"&&projectsPhotos[id]).map((photo, index) => {
+                    {(type==="il"?projectsPhotos[id]:type==="ed"?projectsPhotos2[id]:projectsPhotos3[id]).map((photo, index) => {
                         return(
                             <img key={index} src={photo} alt={photo}
                                 style={{
-                                    width: (index===1 || index===2 || index===4 || index===5 || index===7 || index===8 || index===10 || index===11 || index===13 || index===14 || index===16 || index===17 || index===19 || index===20) && "47%"
+                                    width: (index===1 || index===2 || index===4 || index===5 || index===7 || index===8 || index===10 || index===11 || index===13 || index===14 || index===16 || index===17 || index===19 || index===20 || index===22 || index===23) && "47%"
                                 }}
                             />
                         )
@@ -33,14 +37,14 @@ export function Detail () {
                 </div>
 
                 <div className="info">
-                    <h1>{dataIlustrations[id].title}</h1>
+                    <h1>{data[id].title}</h1>
 
-                    <h2>{dataIlustrations[id].date}</h2>
+                    <h2>{data[id].date}</h2>
 
-                    <p>{dataIlustrations[id].description}</p>
+                    <p>{data[id].description}</p>
 
                     <h5>Colaboradores</h5>
-                    <img src={collaboratorLogo[dataIlustrations[id].collaborators[0]]} alt="COLLABORATOR" />
+                    <img src={collaboratorLogo[data[id].collaborators[0]]} alt="COLLABORATOR" />
                 </div>
             </div>
 
@@ -58,7 +62,7 @@ export function Detail () {
                         <p>Anterior</p>
                     </div>
                 }
-                {id<Object.keys(dataIlustrations).length-1 &&
+                {id<Object.keys(data).length-1 &&
                     <div className="next" style={{flexGrow:1, justifyContent:"flex-end"}} onClick={()=>{
                             window.scrollTo({
                                 top: 0,

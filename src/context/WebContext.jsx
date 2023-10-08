@@ -6,6 +6,7 @@ export const UseWebContext = createContext();
 export const WebContext = ({ children }) => {
     const isMobile=useMediaQuery("(max-width:390px)")
     const isTablet=useMediaQuery("(max-width:768px)")
+    const aboutMeScreen =useMediaQuery("(max-width:1100px)")
 
     const [language, setLanguage] = useState("es")
     const [openLanguageBox, setOpenLanguageBox] = useState(false)
@@ -17,7 +18,8 @@ export const WebContext = ({ children }) => {
             openLanguageBox,
             setOpenLanguageBox,
             isMobile,
-            isTablet
+            isTablet,
+            aboutMeScreen
         }}>
             {children}
         </UseWebContext.Provider>

@@ -24,7 +24,7 @@ import project3foto3 from '../assets/mural/verano/3.jpeg';
 import project3foto4 from '../assets/mural/verano/4.jpeg';
 
 
-export const projectsPhotos = {
+export const projectsPhotos3 = {
     0 : [project1foto1, project1foto2, project1foto3, project1foto4, project1foto5, project1foto6, project1foto7, project1foto8],
     1 : [project2foto1, project2foto2, project2foto3, project2foto4, project2foto5, project2foto6, project2foto7, project2foto8, project2foto9, project2foto10],
     2 : [project3foto1, project3foto2, project3foto3, project3foto4],
