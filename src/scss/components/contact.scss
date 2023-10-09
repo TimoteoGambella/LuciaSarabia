@@ -4,6 +4,9 @@
     align-items: center;
     justify-content: center;
     margin-top: 90px;
+    @media (max-width: 768px){
+        margin-top: 60px;
+    }
     h1{
         font-size: 36px;
         font-weight: 700;
@@ -21,6 +24,13 @@
         min-height: 60vh;
         margin-bottom: 100px;
         padding: 0px 32px;
+        @media (max-width: 768px){
+            max-width: 435px;
+            margin-top: 48px;
+        }
+        @media (max-width: 420px){
+            margin-bottom: 5px;
+        }
         .form{
             display: flex;
             flex-direction: column;
@@ -37,15 +47,24 @@
                 label{
                     font-size: 20px;
                     font-weight: 700;
+                    @media (max-width: 768px){
+                        font-size: 16px;
+                    }
                 }
                 input{
                     all: unset;
                     border-bottom: 2px solid #1E1E1E;
                     width: 100%;
-                    font-size: 40px;
+                    font-size: 30px;
                     font-weight: 500;
                     margin-top: 10px;
                     padding-left: 12px;
+                    @media (max-width:768px){
+                        font-size: 20px;
+                    }
+                    @media (max-width: 420px){
+                        font-size: 16px;
+                    }
                 }
                 textarea {
                     border: none;
@@ -55,12 +74,50 @@
                     outline: none;
                     border-bottom: 2px solid #1E1E1E;
                     width: 100%;
-                    font-size: 40px;
+                    font-size: 30px;
                     font-weight: 500;
                     margin-top: 10px;
                     padding-left: 12px;
                     resize: none;
+                    height: 84px;
+                    @media (max-width:768px){
+                        font-size: 20px;
+                    }
+                    @media (max-width: 420px){
+                        font-size: 16px;
+                    }
                 }
+                .error{
+                    color: red;
+                    margin-top: 5px;
+                }
+            }
+            .button{
+                border-radius: 10px;
+                border: 2px solid #9CCCA5;
+                background: #9CCCA5;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 100%;
+                letter-spacing: 0.5px;
+                padding: 16px;
+                width: fit-content;
+                align-self: center;
+                cursor: pointer;
+            }
+        }
+    }
+    .illustration{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 32px;
+        img{
+            width: 100%;
+            max-width: 250px;
+            @media (max-width: 420px){
+                max-width: 90px;
             }
         }
     }

@@ -41,7 +41,9 @@ export function Detail () {
 
                     <h2>{data[id].date}</h2>
 
-                    <p>{data[id].description}</p>
+                    {data[id].description.map((paragraph, index) => (
+                        <p key={index}>{paragraph}</p>
+                    ))}
 
                     <h5>Colaboradores</h5>
                     <img src={collaboratorLogo[data[id].collaborators[0]]} alt="COLLABORATOR" />

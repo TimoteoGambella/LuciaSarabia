@@ -31,7 +31,6 @@ export function Footer () {
             }
 
             <div className="networks">
-                {/* <img style={{width:isTablet&&"16px"}} src={linkedin} alt="LINKEDIN" /> */}
                 <img onClick={()=>window.open("https://www.instagram.com/luciasarabiaaa/")} style={{width:isTablet&&"16px"}} src={instagram} alt="INSTAGRAM" />
             </div>
         </div>

@@ -51,21 +51,37 @@
 .bio-container-changeDesktop{
     margin-top: 43px;
     padding: 0px 32px;
+    @media (max-width:620px){
+        padding: 0px 16px;
+        margin-top: 20px;
+    }
     .box1{
         display: flex;
         justify-content: center;
         align-items: flex-start;
         gap: 16px;
         margin-bottom: 32px;
+        @media (max-width:620px){
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 48px;
+        }
         div{
             display: flex;
             align-items: flex-start;
             justify-content: center;
             flex-direction: column;
+            @media (max-width:620px){
+                align-items: center;
+            }
             h2{
                 margin-bottom: 20px;
                 font-size: 20px;
                 font-weight: 700;
+                @media (max-width:620px){
+                    margin-top: 48px;
+                    font-size: 18px;
+                }
             }
             p{
                 font-size: 16px;
@@ -73,12 +89,19 @@
                 font-style: italic;
                 line-height: 150%;
                 max-width: 430px;
+                @media (max-width:620px){
+                    text-align: center;
+                    font-size: 14px;
+                }
             }
         }
         .mainPhoto{
             max-width: 300px;
             width: 100%;
             min-width: 252px;
+            @media (max-width:620px){
+                max-width: 360px;
+            }
         }
     }
     .box2{
@@ -91,8 +114,15 @@
         margin: auto;
         border-top: 2px solid #1E1E1E;
         border-bottom: 2px solid #1E1E1E;
+        @media (max-width:620px){
+            align-items: center;
+            padding: 48px 0px;
+        }
         h2{
             margin-bottom: 20px;
+            @media (max-width:620px){
+                font-size: 18px;
+            }
         }
         ul{
             display: flex;
@@ -104,6 +134,9 @@
                 line-height: 150%;
                 font-weight: 500;
                 font-size: 16px;
+                @media (max-width:620px){
+                    font-size: 14px;
+                }
                 span{
                     font-weight: 700;
                 }
@@ -128,6 +161,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @media (max-width:620px){
+            font-size: 18px;
+        }
     }
     div{
         margin-top: 48px;
@@ -145,12 +181,27 @@
         max-width: 343px;
         width: 30%;
         align-self: flex-end;
+        @media (max-width:620px){
+            width: 100%;
+            max-width: 110px;
+            margin-top: 60px;
+        }
     }
     &.changeDesktop{
+        @media (max-width:620px){
+            padding: 0px 16px;
+            padding-top: 32px;
+        }
         div{
             gap: 25px;
+            @media (max-width:620px){
+                gap: 16px;
+            }
             img{
                 width: 130px;
+                @media (max-width:620px){
+                    width: 90px;
+                }
             }
         }
     }

@@ -2,14 +2,14 @@
     {
         "title": "Postales",
         "date" : "San Antonio, 2018-2019",
-        "description": "Las postales son dibujos hechos a partir de las más hermosas vistas de la Hacienda de San Antonio, ubicada en el pueblo mágico de Comala, donde a pocos kilómetros viven los dos grandes volcanes de la región: el Volcán de Fuego y el Nevado de Colima. Éstas se ofrecen como regalo de bienvenida para los huéspedes al entrar por primera vez a su habitación.",
+        "description": ["Las postales son dibujos hechos a partir de las más hermosas vistas de la Hacienda de San Antonio, ubicada en el pueblo mágico de Comala, donde a pocos kilómetros viven los dos grandes volcanes de la región: el Volcán de Fuego y el Nevado de Colima. Éstas se ofrecen como regalo de bienvenida para los huéspedes al entrar por primera vez a su habitación."],
         "collaborators": ["Hacienda_de_San_Antonio"],
         "creativeProcess": ""
     },
     {
         "title": "Mercancía",
         "date" : "Chihuahua, 2019-2023",
-        "description": "El Museo Menonita, contínuo colaborador desde el 2018 hasta la actualidad, llena su gift shop de mercancía y arte hecho tanto por menonitas como por artistas que con su particular visión capturan la vida, los paisajes, las costumbres y las tradiciones del día a día de esta cultura.",
+        "description": ["El Museo Menonita, contínuo colaborador desde el 2018 hasta la actualidad, llena su gift shop de mercancía y arte hecho tanto por menonitas como por artistas que con su particular visión capturan la vida, los paisajes, las costumbres y las tradiciones del día a día de esta cultura."],
         "collaborators": ["Museo_Menonita"],
         "creativeProcess": ""
     },
@@ -30,7 +30,7 @@
     {
         "title": "Entrada | Suchitlán",
         "date" : "Guadalajara, 2021",
-        "description": "El lugar de las flores es Suchitlán, que se esconde atrás de los volcanes, pasando las amplias barrancas y las altas cascadas. Ahí es donde se encuentra todo: el agua, la tierra, el aire, el fuego: la fuerza de la naturaleza. La ofrenda es siempre la máscara, y sin la máscara ¿quién soy? ¿Ave, vuelo, erupción, paisaje? Soy el viaje que me lleva a preguntármelo.",
+        "description": ["El lugar de las flores es Suchitlán, que se esconde atrás de los volcanes, pasando las amplias barrancas y las altas cascadas. Ahí es donde se encuentra todo: el agua, la tierra, el aire, el fuego: la fuerza de la naturaleza. La ofrenda es siempre la máscara, y sin la máscara ¿quién soy? ¿Ave, vuelo, erupción, paisaje? Soy el viaje que me lleva a preguntármelo."],
         "collaborators": ["Iberoamerica_Ilustra"],
         "creativeProcess": "La idea inicial era contar la historia en las 5 imágenes mostradas en este storyboard. Finalmente me decidí por hacerlo en 3."
     },

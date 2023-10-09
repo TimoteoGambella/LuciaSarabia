@@ -68,7 +68,6 @@ export function Header (){
                 {!isMobile && !isTablet ? 
                     <>
                         <div className="networks" style={{width:"642px"}}>
-                            {/* <img src={linkedin} alt="LINKEDIN" /> */}
                             <img onClick={()=>window.open("https://www.instagram.com/luciasarabiaaa/")} src={instagram} alt="INSTAGRAM" />
                         </div>
 
@@ -93,7 +92,7 @@ export function Header (){
                             </div>
                         </nav>
                     </>
-                    : !isMobile && isTablet ? 
+                    :  isTablet &&
                         <>
                             <img style={{padding:"28px 0px"}} onClick={()=>navigate("/")} src={logoTablet} alt="LOGO" />
 
@@ -142,10 +141,6 @@ export function Header (){
                                     }
                                 </nav>
                             }
-                        </>
-                        : isMobile &&
-                        <>
-
                         </>
                 }
             </div>
