@@ -3,14 +3,13 @@ import logo from "../assets/footerLogo.svg";
 import logoTablet from "../assets/logoTablet.svg";
 
 import instagram from "../assets/mdi_instagram.svg";
-import linkedin from "../assets/mdi_linkedin.svg";
 import { UseWebContext } from "../context/WebContext";
 
 export function Footer () {
     const {isTablet, isMobile} = useContext(UseWebContext);
     
     return(
-        <div style={{background:window.location.pathname.startsWith("/proj")&&"#F9F8F4"}} className={`footer-container ${isTablet&&"tablet"}`}>
+        <div style={{background:window.location.pathname.startsWith("/proj")&&"#F9F8F4"}} className={`footer-container ${isTablet&&"tablet"} ${isMobile&&"mobile"}`}>
             <img onClick={()=>{
                 window.scrollTo({
                     top: 0,
@@ -25,7 +24,7 @@ export function Footer () {
                 <div className="erick">
                     <p>Made with <span>♥</span></p>
                     <p>
-                        by <span>Erick Magallán</span>
+                        by <span onClick={()=>window.open("https://www.behance.net/erickmagallan")}>Erick Magallán</span>
                     </p>
                 </div>
             }

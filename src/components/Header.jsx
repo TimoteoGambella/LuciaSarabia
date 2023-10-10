@@ -6,16 +6,10 @@ import logo from "../assets/mainLogo.svg";
 import logoTablet from "../assets/logoTablet.svg";
 
 import instagram from "../assets/mdi_instagram.svg";
-import linkedin from "../assets/mdi_linkedin.svg";
-import arrow from "../assets/arrow-language.svg"
 import menuLogo from "../assets/menuLogo.svg"
 
-import en from "../assets/english.svg";
-import es from "../assets/spanish.svg";
-import fr from "../assets/french.svg";
-
 export function Header (){
-    const {language, setLanguage, openLanguageBox, setOpenLanguageBox, isTablet, isMobile} = useContext(UseWebContext);
+    const {openLanguageBox, setOpenLanguageBox, isTablet, isMobile} = useContext(UseWebContext);
 
     const navigate = useNavigate()
     const [menu, setMenu] = useState(false)
@@ -33,34 +27,34 @@ export function Header (){
         }
     }, [menu])
 
-    const LanguageBox = () => {
-        return(
-            <div className="language-box" style={{color:"#1E1E1E"}}>
-                <div className="principal">
-                    <p>{language.toUpperCase()} </p>
-                    <img style={{width:"24px"}} src={language==="es"?es:language==="en"?en:language==="fr"&&fr} alt="LANG" />
-                </div>
-                <div className="secondary" 
-                    onClick={()=>{
-                        setLanguage(language==="es"?"en":language==="en"?"es":language==="fr"&&"es")
-                        setOpenLanguageBox(!openLanguageBox)
-                    }}
-                >
-                    <p>{language==="es"?"EN":language==="en"?"ES":language==="fr"&&"ES"}</p>
-                    <img style={{width:"24px"}} src={language==="es"?en:language==="en"?es:language==="fr"&&es} alt="LANG" />
-                </div>
-                <div className="secondary" 
-                    onClick={()=>{
-                        setLanguage(language==="es"?"fr":language==="en"?"fr":language==="fr"&&"en")
-                        setOpenLanguageBox(!openLanguageBox)
-                    }}
-                >
-                    <p>{language==="es"?"FR":language==="en"?"FR":language==="fr"&&"EN"}</p>
-                    <img style={{width:"24px"}} src={language==="es"?fr:language==="en"?fr:language==="fr"&&en} alt="LANG" />
-                </div>
-            </div>
-        )
-    }
+    // const LanguageBox = () => {
+    //     return(
+    //         <div className="language-box" style={{color:"#1E1E1E"}}>
+    //             <div className="principal">
+    //                 <p>{language.toUpperCase()} </p>
+    //                 <img style={{width:"24px"}} src={language==="es"?es:language==="en"?en:language==="fr"&&fr} alt="LANG" />
+    //             </div>
+    //             <div className="secondary" 
+    //                 onClick={()=>{
+    //                     setLanguage(language==="es"?"en":language==="en"?"es":language==="fr"&&"es")
+    //                     setOpenLanguageBox(!openLanguageBox)
+    //                 }}
+    //             >
+    //                 <p>{language==="es"?"EN":language==="en"?"ES":language==="fr"&&"ES"}</p>
+    //                 <img style={{width:"24px"}} src={language==="es"?en:language==="en"?es:language==="fr"&&es} alt="LANG" />
+    //             </div>
+    //             <div className="secondary" 
+    //                 onClick={()=>{
+    //                     setLanguage(language==="es"?"fr":language==="en"?"fr":language==="fr"&&"en")
+    //                     setOpenLanguageBox(!openLanguageBox)
+    //                 }}
+    //             >
+    //                 <p>{language==="es"?"FR":language==="en"?"FR":language==="fr"&&"EN"}</p>
+    //                 <img style={{width:"24px"}} src={language==="es"?fr:language==="en"?fr:language==="fr"&&en} alt="LANG" />
+    //             </div>
+    //         </div>
+    //     )
+    // }
 
     return(
         <>
@@ -83,13 +77,13 @@ export function Header (){
                             <p  style={{
                                     color:window.location.pathname==="/contact"&&"#1E1E1E"
                                 }} onClick={()=>navigate("/contact")}>Contacto</p>
-                            <div onClick={()=>setOpenLanguageBox(!openLanguageBox)} style={{color:"#1E1E1E"}}>
+                            {/* <div onClick={()=>setOpenLanguageBox(!openLanguageBox)} style={{color:"#1E1E1E"}}>
                                 <p>{language.toUpperCase()} </p>
                                 
                                 <img style={{width:"24px"}} src={language==="es"?es:language==="en"?en:language==="fr"&&fr} alt="LANG" />
 
                                 <img src={arrow} alt="ARROW"/>
-                            </div>
+                            </div> */}
                         </nav>
                     </>
                     :  isTablet &&
@@ -109,14 +103,14 @@ export function Header (){
                                             color:window.location.pathname==="/contact"&&"#1E1E1E"
                                         }} onClick={()=>navigate("/contact")}>Contacto
                                     </p>
-                                    <div onClick={()=>setOpenLanguageBox(!openLanguageBox)}>
+                                    {/* <div onClick={()=>setOpenLanguageBox(!openLanguageBox)}>
                                         <p>{language.toUpperCase()} </p>
 
                                         <img style={{width:"24px"}} src={language==="es"?es:language==="en"?en:language==="fr"&&fr} alt="LANG" />
 
                                         <img src={arrow} alt="ARROW"/>
-                                    </div>
-                                    {openLanguageBox &&
+                                    </div> */}
+                                    {/* {openLanguageBox &&
                                         <div className="language-box-tablet">
 
                                             <div className="secondary" 
@@ -138,16 +132,16 @@ export function Header (){
                                                 <img style={{width:"24px"}} src={language==="es"?fr:language==="en"?fr:language==="fr"&&en} alt="LANG" />
                                             </div>
                                         </div>
-                                    }
+                                    } */}
                                 </nav>
                             }
                         </>
                 }
             </div>
 
-            {openLanguageBox && !isTablet &&
+            {/* {openLanguageBox && !isTablet &&
                 <LanguageBox />
-            }
+            } */}
         </>
     )
 }

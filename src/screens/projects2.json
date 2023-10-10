@@ -2,7 +2,7 @@
     {
         "title": "Libro de Poesía Infantil | Canturía, Arrullos y Poemas",
         "date" : "Madrid, 2021",
-        "description": "Canturía, Arrullos y Poemas es un libro de poesía infantil escrito por el poeta cubano Aldo Méndez. La edición y dirección de arte estuvo a cargo de Luisa F. Arellano, Raquel. Sánchez y Erik Fonseca. Carlos Cano y Hernán Milla le pusieron música a los poemas. Se imprimieron 1000 ejemplares en diciembre de 2021 en España. Fue mi primer proyecto editorial, y por esa razón ha sido uno de los más gratificantes.",
+        "description": ["Canturía, Arrullos y Poemas es un libro de poesía infantil escrito por el poeta cubano Aldo Méndez. La edición y dirección de arte estuvo a cargo de Luisa F. Arellano, Raquel. Sánchez y Erik Fonseca. Carlos Cano y Hernán Milla le pusieron música a los poemas. Se imprimieron 1000 ejemplares en diciembre de 2021 en España. Fue mi primer proyecto editorial, y por esa razón ha sido uno de los más gratificantes."],
         "collaborators": ["Veleta_Roja"],
         "creativeProcess": "El proceso de realización fue intensivo y corto (un mes y cinco días), y todxs trabajamos al unísono para desarrollar cada una de las ideas e ilustraciones que existen dentro del libro; todo es de todxs."
     },

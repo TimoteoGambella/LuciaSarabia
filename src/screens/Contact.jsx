@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import photo from "../assets/ilustration-contact.svg";
 import { BeatLoader } from 'react-spinners';
 import { UseWebContext } from "../context/WebContext";
+import emailjs from 'emailjs-com';
 
 const validateEmail = (email) => {
     const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
@@ -73,6 +74,13 @@ export function Contact () {
         if(error){
             setLoader(false)
             return
+        }else{        
+            // emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', emailData, 'YOUR_USER_ID')
+            //     .then((response) => {
+            //         console.log('Email sent successfully:', response.status, response.text);
+            //     }, (error) => {
+            //         console.error('Error sending email:', error);
+            //     });
         }
     }
     
@@ -87,7 +95,7 @@ export function Contact () {
 
                 <div className="form">
                     <div>
-                        <label htmlFor="name" style={{color:errors.name&&"red"}}>Nombre</label>
+                        <label htmlFor="name">Nombre</label>
                         <input 
                             type="text" 
                             id="name" 
@@ -97,7 +105,7 @@ export function Contact () {
                         {errors.name && <p className="error">{errors.name}</p>}
                     </div>
                     <div>
-                        <label htmlFor="email" style={{color:errors.email&&"red"}}>Email</label>
+                        <label htmlFor="email">Email</label>
                         <input 
                             type="email" 
                             id="email" 
@@ -107,7 +115,7 @@ export function Contact () {
                         {errors.email && <p className="error">{errors.email}</p>}
                     </div>
                     <div>
-                        <label htmlFor="message" style={{color:errors.message&&"red"}}>Mensaje</label>
+                        <label htmlFor="message">Mensaje</label>
                         <textarea 
                             id="message" 
                             value={data.message}

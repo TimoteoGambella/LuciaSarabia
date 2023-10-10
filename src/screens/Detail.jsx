@@ -10,10 +10,14 @@ import {projectsPhotos2} from "../data/projects2Photos";
 import {projectsPhotos3} from "../data/projects3Photos";
 
 import backArrow from "../assets/backArrow.svg"
+import { useContext } from "react";
+import { UseWebContext } from "../context/WebContext";
 
 export function Detail () {
     let { type, id } = useParams();
     const navigate = useNavigate();
+
+    const {isTablet} = useContext(UseWebContext);
 
     const data = type==="il"?dataIlustrations:type==="ed"?dataEditorial:dataMural
 
@@ -21,7 +25,11 @@ export function Detail () {
         <div className="detail-container">
             <div className="backTo" onClick={()=>navigate(`/${type}`)}>
                 <img src={backArrow} alt="BACK" />
-                <p>Volver a <span>{type==="il"?"Ilustración":type==="ed"?"Editorial":type==="mu"&&"Mural"}</span></p>
+                {isTablet ? 
+                    <p>{type==="il"?"Ilustración":type==="ed"?"Editorial":type==="mu"&&"Mural"}</p>
+                :
+                    <p>Volver a <span>{type==="il"?"Ilustración":type==="ed"?"Editorial":type==="mu"&&"Mural"}</span></p>
+                }
             </div>
             <div className="box">
                 <div className="photos">

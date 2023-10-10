@@ -4,9 +4,9 @@ import { createContext, useState } from 'react';
 export const UseWebContext = createContext();
 
 export const WebContext = ({ children }) => {
-    const isMobile=useMediaQuery("(max-width:390px)")
-    const isTablet=useMediaQuery("(max-width:768px)")
-    const aboutMeScreen =useMediaQuery("(max-width:1100px)")
+    const isMobile=useMediaQuery("(max-width:391px)")
+    const isTablet=useMediaQuery("(max-width:769px)")
+    const aboutMeScreen =useMediaQuery("(max-width:1101px)")
 
     const [language, setLanguage] = useState("es")
     const [openLanguageBox, setOpenLanguageBox] = useState(false)

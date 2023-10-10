@@ -15,7 +15,7 @@ import { useParams } from "react-router-dom";
 
 
 export function Home () {
-    const {isTablet, isMobile} = useContext(UseWebContext);
+    const {isTablet} = useContext(UseWebContext);
     let { type } = useParams();
 
     const [section, setSection] = useState(type!==undefined?type:"il")

@@ -5,7 +5,7 @@
     justify-content: center;
     padding-top: 64px;
     color: rgba(30, 30, 30, 0.50);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;   
     .sections{
         display: flex;
@@ -20,6 +20,7 @@
         font-size: 16px;
         font-weight: 500;
         padding-bottom: 35px;
+        cursor: pointer;
         .principal{
             display: flex;
             align-items: center;
