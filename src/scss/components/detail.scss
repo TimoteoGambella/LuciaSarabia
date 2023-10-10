@@ -7,6 +7,10 @@
     padding: 0px 32px;
     padding-top: 64px;
     background: #F9F8F4;
+    @media (max-width:801px){
+        padding: 0px 16px;
+        padding-top: 32px;
+    }
     .backTo{
         align-self: flex-start;
         display: flex;
@@ -15,6 +19,9 @@
         font-size: 20px;
         font-weight: 500;
         cursor: pointer;
+        @media (max-width:801px){
+            font-size: 14px;
+        }
         span{
             font-weight: 700;
         }
@@ -26,6 +33,10 @@
         gap: 32px;
         margin-top: 64px;
         width: 100%;
+        @media (max-width:801px){
+            flex-direction: column;
+            margin-top: 32px;
+        }
         .photos{
             width: 50%;
             display: flex;
@@ -34,9 +45,17 @@
             gap: 14px;
             row-gap: 32px;
             flex-wrap: wrap;
+            @media (max-width:801px){
+                width: 100%;
+                max-width: 350px;
+                margin: auto;
+            }
             img{
                 width: 100%;
                 max-width: 789px;
+                @media (max-width:801px){
+                    max-width: none;
+                }
             }
         }
         .info{
@@ -45,6 +64,9 @@
             align-items: flex-start;
             justify-content: center;
             flex-direction: column;
+            @media (max-width:801px){
+                width: 100%;
+            }
             h1{
                 font-size: 48px;
                 font-weight: 700;
@@ -62,6 +84,9 @@
                 font-weight: 500;
                 line-height: 150%;
                 margin-top: 32px;
+                @media (max-width:801px){
+                    font-size: 14px;
+                }
             }
             h5{
                 width: 100%;
@@ -74,6 +99,46 @@
                 max-width: 215px;
                 align-self: center;
                 margin-top: 66px;
+            }
+        }
+        .infoDetail800{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            h1{
+                font-size: 24px;
+                font-weight: 700;
+            }
+            h2{
+                font-size: 12px;
+                font-weight: 500;
+                border-bottom: 1px solid #1E1E1E;
+                width: 70%;
+                padding-bottom: 10px;
+                @media (max-width:500px){
+                    width: 100%;
+                }
+                
+            }
+        }
+        .collaborator-detail800{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 64px;
+            width: 100%;
+            h5{
+                font-size: 14px;
+                font-weight: 700;
+            }
+            img{
+                max-width: 110px;
+                width: 100%;
+                margin-top: 32px;
             }
         }
     }
@@ -91,6 +156,9 @@
             font-weight: 500;
             color: #1E1E1E;
             cursor: pointer;
+            @media (max-width:801px){
+                font-size: 16px;
+            }
         }
         .next{
             img{
