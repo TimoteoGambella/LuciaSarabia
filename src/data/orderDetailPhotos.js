@@ -19,7 +19,7 @@ export const orderDetailPhotos2 = {
     2: [2, 3]
 }
 
-export const oderDetailPhotos3 = {
+export const orderDetailPhotos3 = {
     0: [2, 3, 4, 5, 7, 8, 10, 11, 13, 14, 16, 17, 18, 19, 22, 23],
     1: [2, 3],
     2: []

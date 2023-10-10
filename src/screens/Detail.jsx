@@ -13,6 +13,8 @@ import backArrow from "../assets/backArrow.svg"
 import { useContext } from "react";
 import { UseWebContext } from "../context/WebContext";
 
+import {orderDetailPhotos, orderDetailPhotos2, orderDetailPhotos3} from "../data/orderDetailPhotos";
+
 export function Detail () {
     let { type, id } = useParams();
     const navigate = useNavigate();
@@ -20,6 +22,8 @@ export function Detail () {
     const {isTablet} = useContext(UseWebContext);
 
     const data = type==="il"?dataIlustrations:type==="ed"?dataEditorial:dataMural
+    const array = type==="il"?orderDetailPhotos:type==="ed"?orderDetailPhotos2:orderDetailPhotos3
+    
 
     return (
         <div className="detail-container">
@@ -34,10 +38,11 @@ export function Detail () {
             <div className="box">
                 <div className="photos">
                     {(type==="il"?projectsPhotos[id]:type==="ed"?projectsPhotos2[id]:projectsPhotos3[id]).map((photo, index) => {
+                        const isInArray = array[id].includes(index)
                         return(
                             <img key={index} src={photo} alt={photo}
                                 style={{
-                                    width: (index===1 || index===2 || index===4 || index===5 || index===7 || index===8 || index===10 || index===11 || index===13 || index===14 || index===16 || index===17 || index===19 || index===20 || index===22 || index===23) && "47%"
+                                    width: isInArray && "47%"
                                 }}
                             />
                         )
