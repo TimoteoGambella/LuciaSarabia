@@ -126,7 +126,7 @@ export function Detail () {
                     </div>
                 }    
 
-                {collaboratorLogo[data[id].collaborators[0]]!==undefined &&
+                {detail800 && collaboratorLogo[data[id].collaborators[0]]!==undefined &&
                     <div className="collaborator-detail800">
                         <h5>Colaboradores</h5>
                         <img src={collaboratorLogo[data[id].collaborators[0]]} alt="COLLABORATOR" />
