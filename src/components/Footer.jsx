@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import logo from "../assets/footerLogo.svg";
-import logoTablet from "../assets/logohorizontal.png";
-
+import logoTablet from "../assets/logohorizontal.svg";
+import banner from "../assets/bannerfooter.jpg";
 import instagram from "../assets/mdi_instagram.svg";
 import { UseWebContext } from "../context/WebContext";
 
@@ -9,6 +9,7 @@ export function Footer () {
     const {isTablet, isMobile} = useContext(UseWebContext);
     
     return(
+        <>
         <div style={{background:window.location.pathname.startsWith("/proj")&&"#F9F8F4"}} className={`footer-container ${isTablet&&"tablet"} ${isMobile&&"mobile"}`}>
             <img onClick={()=>{
                 window.scrollTo({
@@ -33,5 +34,7 @@ export function Footer () {
                 <img onClick={()=>window.open("https://www.instagram.com/luciasarabiaaa/")} style={{width:isTablet&&"16px"}} src={instagram} alt="INSTAGRAM" />
             </div>
         </div>
+        <img src={banner} alt="BANNER" style={{width:"100%"}}/>
+        </>
     )
 }
