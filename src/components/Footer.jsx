@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import logo from "../assets/footerLogo.svg";
-import logoTablet from "../assets/logoTablet.svg";
+import logoTablet from "../assets/logohorizontal.png";
 
 import instagram from "../assets/mdi_instagram.svg";
 import { UseWebContext } from "../context/WebContext";
@@ -18,7 +18,7 @@ export function Footer () {
             }} src={isTablet ? logoTablet : logo} alt="LOGO" />
 
             {!isTablet &&
-                <p>Made with <span>♥</span> by <span>Erick Magallán</span></p>
+                <p>Made with <span>♥</span> by <span onClick={()=>window.open("https://www.behance.net/erickmagallan")}>Erick Magallán</span></p>
             }
             {isTablet &&
                 <div className="erick">

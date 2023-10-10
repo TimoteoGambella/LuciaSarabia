@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import photo from "../assets/ilustration-contact.svg";
+import photo from "../assets/contactoelefante.png";
 import { BeatLoader } from 'react-spinners';
 import { UseWebContext } from "../context/WebContext";
 import emailjs from 'emailjs-com';
