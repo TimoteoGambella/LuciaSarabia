@@ -14,7 +14,7 @@ import { PreloadImages } from './components/PreloadImg';
 
 function App() {
 
-  // document.addEventListener("contextmenu", function(e){e.preventDefault()})
+  document.addEventListener("contextmenu", function(e){e.preventDefault()})
 
   return (
     <WebContext>

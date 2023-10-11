@@ -2,8 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { UseWebContext } from "../context/WebContext";
 import { useNavigate } from "react-router-dom";
 
-import logo from "../assets/mainLogo.svg";
-import logoTablet from "../assets/logohorizontal.png"
+import logo from "../assets/logohorizontal.svg";
 import instagram from "../assets/mdi_instagram.svg";
 import menuLogo from "../assets/menuLogo.svg"
 
@@ -64,7 +63,7 @@ export function Header (){
                             <img onClick={()=>window.open("https://www.instagram.com/luciasarabiaaa/")} src={instagram} alt="INSTAGRAM" />
                         </div>
 
-                        <img className="logo" onClick={()=>{setMenu(false);navigate("/")}} src={!isTablet?logo:logoTablet} alt="LOGO" />
+                        <img className="logo" onClick={()=>{setMenu(false);navigate("/")}} src={logo} alt="LOGO" />
 
                         <nav style={{width:"642px"}}>
                             <p  style={{
