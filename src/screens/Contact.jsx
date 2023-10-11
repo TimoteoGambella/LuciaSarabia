@@ -24,7 +24,7 @@ export function Contact () {
         message:""
     })
 
-    const {final, setFinal} = useState(false);
+    const [final, setFinal] = useState(false);
     const [loader, setLoader] = useState(false);
 
     const handleInputChange = (event) => {
@@ -76,10 +76,15 @@ export function Contact () {
             setLoader(false)
             return
         }else{        
-            emailjs.send('service_5pof7u5', 'template_umwfunz', data, 'IQYl2IeFWUvZUAqRt6P-R')
+            emailjs.send('service_5pof7u5', 'template_umwfunz', data, 'vwzoFvVjKiFvy4Msq')
                 .then((response) => {
                     setFinal(true)
                     setLoader(false)
+                    setData({
+                        name:"",
+                        email:"",
+                        message:""
+                    })
                 }, (error) => {
                     setLoader(false)
                 });
