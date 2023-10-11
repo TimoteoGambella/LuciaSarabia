@@ -206,4 +206,9 @@
     .swiper-wrapper{
         align-items: center;
     }
+    &.especialSwiper{
+        .swiper-wrapper{
+            justify-content: center !important;
+        }
+    }
 }

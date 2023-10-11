@@ -16,9 +16,9 @@ import { UseWebContext } from "../context/WebContext";
 import {orderDetailPhotos, orderDetailPhotos2, orderDetailPhotos3} from "../data/orderDetailPhotos";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { PreLoadImgDetail } from "../components/PreLoadImgDetail";
 
 export function Detail () {
     let { type, id } = useParams();
@@ -31,6 +31,10 @@ export function Detail () {
 
     return (
         <div className="detail-container">
+            <PreLoadImgDetail 
+                data={type==="il"?projectsPhotos[id]:type==="ed"?projectsPhotos2[id]:projectsPhotos3[id]}
+                data2={type==="il"?projectsPhotosPC[id]:type==="ed"?projectsPhotos2PC[id]:projectsPhotos3PC[id]}
+            />
             <div className="backTo" onClick={()=>navigate(`/${type}`)}>
                 <img src={backArrow} alt="BACK" />
                 {isTablet ? 
@@ -155,7 +159,7 @@ export function Detail () {
                             750: { slidesPerView: 3 },
                             350: { slidesPerView: 2 }
                         }}
-                        className="mySwiper"                      
+                        className={`mySwiper ${(type==="il"?projectsPhotosPC[id]:type==="ed"?projectsPhotos2PC[id]:projectsPhotos3PC[id]).length<=4&&"especialSwiper"}`}                      
                     >
                         {(type==="il"?projectsPhotosPC[id]:type==="ed"?projectsPhotos2PC[id]:projectsPhotos3PC[id]).map((photo, index) => {
                             return(
