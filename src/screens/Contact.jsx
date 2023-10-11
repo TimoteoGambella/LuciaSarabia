@@ -90,7 +90,7 @@ export function Contact () {
 
             <div className="box">
                 {!isTablet &&
-                    <img src={photo} alt="ILLUSTRATION" />
+                    <img className="illustration" src={photo} alt="ILLUSTRATION" />
                 }
 
                 <div className="form">

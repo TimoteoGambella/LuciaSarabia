@@ -1,6 +1,6 @@
 import collaborator1 from '../assets/collaborators/Hacienda_de_San_Antonio.png';
 import collaborator2 from '../assets/collaborators/Museo_Menonita.png';
-import collaborator3 from '../assets/collaborators/Bravo_Cafe_Bar.jpeg';
+import collaborator3 from '../assets/collaborators/Bravo_Cafe_Bar.svg';
 import collaborator4 from '../assets/collaborators/Simons_Kaffee.png';
 import collaborator5 from '../assets/collaborators/Iberoamerica_Ilustra.png';
 import collaborator6 from '../assets/collaborators/La_Habanera.png';
@@ -9,7 +9,7 @@ import collaborator8 from '../assets/collaborators/Estudio_Lapis.png';
 import collaborator9 from '../assets/collaborators/Microtel_In_Suites_by_Wyndham.png';
 import collaborator10 from '../assets/collaborators/Festival_de_Cine_de_Tecoman.png';
 import collaborator11 from '../assets/collaborators/Veleta_Roja.png';
-import collaborator12 from '../assets/collaborators/Editorial_Alacraña.png';
+import collaborator12 from '../assets/collaborators/Editorial_Alcaraña.svg';
 import collaborator13 from '../assets/collaborators/Santillana.svg';
 import collaborator14 from '../assets/collaborators/CaboDevelopment.svg';
 

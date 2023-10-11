@@ -13,6 +13,8 @@ import { Detail } from './screens/Detail';
 
 function App() {
 
+  // document.addEventListener("contextmenu", function(e){e.preventDefault()})
+
   return (
     <WebContext>
       <Router>
