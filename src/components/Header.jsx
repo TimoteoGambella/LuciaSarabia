@@ -3,7 +3,6 @@ import { UseWebContext } from "../context/WebContext";
 import { useNavigate } from "react-router-dom";
 
 import logo from "../assets/mainLogo.svg";
-import logoTablet from "../assets/logoTablet.svg";
 
 import instagram from "../assets/mdi_instagram.svg";
 import menuLogo from "../assets/menuLogo.svg"
@@ -88,7 +87,7 @@ export function Header (){
                     </>
                     :  isTablet &&
                         <>
-                            <img style={{padding:"28px 0px"}} onClick={()=>{setMenu(false);navigate("/")}} src={logoTablet} alt="LOGO" />
+                            <img style={{padding:"28px 0px"}} onClick={()=>{setMenu(false);navigate("/")}} src={logo} alt="LOGO" />
 
                             <img onClick={()=>setMenu(!menu)} src={menuLogo} alt="MENU" />
                             {menu && 

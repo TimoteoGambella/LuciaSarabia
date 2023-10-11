@@ -149,26 +149,14 @@ export function Detail () {
                     <h2>Proceso Creativo</h2>
                     <p>{data[id].creativeProcess}</p>
 
-                    <Swiper
-                        slidesPerView={1}
-                        spaceBetween={32}
-                        breakpoints={{
-                            1500: { slidesPerView: 4 },
-                            1300: {spaceBetween: 16},
-                            1000: { slidesPerView: 4 },
-                            750: { slidesPerView: 3 },
-                            350: { slidesPerView: 2 }
-                        }}
-                        className={`mySwiper ${(type==="il"?projectsPhotosPC[id]:type==="ed"?projectsPhotos2PC[id]:projectsPhotos3PC[id]).length<=4&&"especialSwiper"}`}                      
-                    >
+                    <div>
                         {(type==="il"?projectsPhotosPC[id]:type==="ed"?projectsPhotos2PC[id]:projectsPhotos3PC[id]).map((photo, index) => {
                             return(
-                                <SwiperSlide>
-                                    <img src={photo} alt="PHOTOS" key={index}/>
-                                </SwiperSlide>
+                                <img src={photo} alt="PHOTOS" key={index}/>
                             )
                         })}
-                    </Swiper>
+                    </div>
+                    
                 </div>
             }
 

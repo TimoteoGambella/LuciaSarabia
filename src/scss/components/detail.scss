@@ -167,6 +167,26 @@
                 font-size: 16px;
             }
         }
+        div{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+            margin-top: 64px;
+            img{
+                width: 378px;
+                max-width: 378px;
+            }
+            @media (max-width: 1000px){
+                gap: 16px;
+                img{
+                    width: 170px;
+                    max-width: 170px;
+                }
+            }
+        }
     }
     .next-prev{
         display: flex;
@@ -194,21 +214,3 @@
     }
 }
 
-
-
-.mySwiper{
-    width: 100%;
-    margin-top: 64px;
-    img{
-        max-width: 350px;
-        width: 100%;
-    }
-    .swiper-wrapper{
-        align-items: center;
-    }
-    &.especialSwiper{
-        .swiper-wrapper{
-            justify-content: center !important;
-        }
-    }
-}
