@@ -62,9 +62,15 @@ export function Bio () {
                 <h2>Clientes</h2>
                 
                 <div>
-                    {Object.values(collaboratorLogo).map((img,i)=>(
-                        <img src={img} key={i} alt={img}/>
-                    ))}
+                    {Object.values(collaboratorLogo).map((img,i)=>{
+                        return(
+                            <>
+                                {i!==4 && i !== 7 &&
+                                    <img src={img} key={i} alt={img}/>
+                                }
+                            </>
+                        )
+                    })}
                 </div>
 
                 <img className="finalPhoto" src={finalPhoto} alt="ILLUSTRATION" />
