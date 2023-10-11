@@ -10,6 +10,11 @@ export function Bio () {
 
     return (
         <>
+            <link rel="preload" href={mainPhoto} as="image" />
+            <link rel="preload" href={finalPhoto} as="image" />
+            {Object.values(collaboratorLogo).map((imagesArray,i) => (
+                <link key={i} rel="preload" href={imagesArray[i]} as="image" />
+            ))}
             {!aboutMeScreen ? 
                 <div className="bio-container">
                     <img className="mainPhoto" src={mainPhoto} alt="BIO" />

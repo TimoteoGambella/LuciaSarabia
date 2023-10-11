@@ -65,18 +65,18 @@ export function Header (){
                             <img onClick={()=>window.open("https://www.instagram.com/luciasarabiaaa/")} src={instagram} alt="INSTAGRAM" />
                         </div>
 
-                        <img className="logo" onClick={()=>navigate("/")} src={logo} alt="LOGO" />
+                        <img className="logo" onClick={()=>{setMenu(false);navigate("/")}} src={logo} alt="LOGO" />
 
                         <nav style={{width:"642px"}}>
                             <p  style={{
                                     color:window.location.pathname==="/"&&"#1E1E1E"
-                                }} onClick={()=>navigate("/")}>Trabajo</p>
+                                }} onClick={()=>{setMenu(false);navigate("/")}}>Trabajo</p>
                             <p  style={{
                                     color:window.location.pathname==="/bio"&&"#1E1E1E"
-                                }} onClick={()=>navigate("/bio")}>Bio</p>
+                                }} onClick={()=>{setMenu(false);navigate("/bio")}}>Bio</p>
                             <p  style={{
                                     color:window.location.pathname==="/contact"&&"#1E1E1E"
-                                }} onClick={()=>navigate("/contact")}>Contacto</p>
+                                }} onClick={()=>{setMenu(false);navigate("/contact")}}>Contacto</p>
                             {/* <div onClick={()=>setOpenLanguageBox(!openLanguageBox)} style={{color:"#1E1E1E"}}>
                                 <p>{language.toUpperCase()} </p>
                                 
@@ -88,20 +88,20 @@ export function Header (){
                     </>
                     :  isTablet &&
                         <>
-                            <img style={{padding:"28px 0px"}} onClick={()=>navigate("/")} src={logoTablet} alt="LOGO" />
+                            <img style={{padding:"28px 0px"}} onClick={()=>{setMenu(false);navigate("/")}} src={logoTablet} alt="LOGO" />
 
                             <img onClick={()=>setMenu(!menu)} src={menuLogo} alt="MENU" />
                             {menu && 
                                 <nav className="menuBox">
                                     <p  style={{
                                             color:window.location.pathname==="/"&&"#1E1E1E"
-                                        }} onClick={()=>navigate("/")}>Trabajo</p>
+                                        }} onClick={()=>{setMenu(false);navigate("/")}}>Trabajo</p>
                                     <p  style={{
                                             color:window.location.pathname==="/bio"&&"#1E1E1E"
-                                        }} onClick={()=>navigate("/bio")}>Bio</p>
+                                        }} onClick={()=>{setMenu(false);navigate("/bio")}}>Bio</p>
                                     <p  style={{
                                             color:window.location.pathname==="/contact"&&"#1E1E1E"
-                                        }} onClick={()=>navigate("/contact")}>Contacto
+                                        }} onClick={()=>{setMenu(false);navigate("/contact")}}>Contacto
                                     </p>
                                     {/* <div onClick={()=>setOpenLanguageBox(!openLanguageBox)}>
                                         <p>{language.toUpperCase()} </p>

@@ -1,6 +1,6 @@
 .bio-container{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     margin-top: 145px;
     gap: 64px;
@@ -8,6 +8,7 @@
     padding-bottom: 96px;
     padding-top: 140px;
     border-bottom: 1px solid #1E1E1EBF;
+    flex-grow: 1;
     .mainPhoto{
         max-width: 654px;
         width: 100%;

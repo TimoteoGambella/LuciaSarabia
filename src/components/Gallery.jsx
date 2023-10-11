@@ -9,7 +9,7 @@ export function Gallery ({data, photos, section}){
     
     const breakpointColumnsObj = {
         default: 3,
-        560: 2
+        700: 2
     };
 
     const navigate = useNavigate()
@@ -22,7 +22,13 @@ export function Gallery ({data, photos, section}){
         >
             {data.map((project, index) => {
                 return(
-                    <div key={index} onClick={()=>navigate(`/project/${section}/${index}`)} className="image-container">
+                    <div key={index} onClick={()=>{
+                            navigate(`/project/${section}/${index}`)
+                            window.scrollTo({
+                                top: 0,
+                                behavior: 'smooth'
+                            });
+                        }} className="image-container">
                         <img src={photos[index][0]} alt={project.title} />
                         <div className="overlay">
                             <h3>{project.title}</h3>

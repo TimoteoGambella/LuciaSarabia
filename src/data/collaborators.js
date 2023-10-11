@@ -9,7 +9,7 @@ import collaborator8 from '../assets/collaborators/Estudio_Lapis.png';
 import collaborator9 from '../assets/collaborators/Microtel_In_Suites_by_Wyndham.png';
 import collaborator10 from '../assets/collaborators/Festival_de_Cine_de_Tecoman.png';
 import collaborator11 from '../assets/collaborators/Veleta_Roja.png';
-import collaborator12 from '../assets/collaborators/Editorial_Alacraña.png';
+import collaborator12 from '../assets/collaborators/Editorial_Alcaraña.svg';
 import collaborator13 from '../assets/collaborators/Santillana.svg';
 import collaborator14 from '../assets/collaborators/CaboDevelopment.svg';
 import collaborator15 from '../assets/collaborators/casa_careyes.png';

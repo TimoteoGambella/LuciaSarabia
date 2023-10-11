@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import logo from "../assets/footerLogo.svg";
 import logoTablet from "../assets/logohorizontal.svg";
-import banner from "../assets/bannerfooter.jpg";
+import banner from "../assets/bannerfooter_actualizado.jpeg";
 import instagram from "../assets/mdi_instagram.svg";
 import { UseWebContext } from "../context/WebContext";
 

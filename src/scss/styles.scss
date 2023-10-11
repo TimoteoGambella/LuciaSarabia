@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
     list-style: none;
+    user-select: none;
 }
 
 body{
@@ -15,6 +16,14 @@ body{
     justify-content: center;
     width: 100%;
     background-color: #F9F8F4;
+}
+#root{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 

@@ -10,11 +10,15 @@ import { Contact } from "./screens/Contact";
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Detail } from './screens/Detail';
+import { PreloadImages } from './components/PreloadImg';
 
 function App() {
 
+  // document.addEventListener("contextmenu", function(e){e.preventDefault()})
+
   return (
     <WebContext>
+      <PreloadImages />
       <Router>
         <Header />
         <Routes>

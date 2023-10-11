@@ -24,6 +24,7 @@ export function Contact () {
         message:""
     })
 
+    const {final, setFinal} = useState(false);
     const [loader, setLoader] = useState(false);
 
     const handleInputChange = (event) => {
@@ -75,22 +76,24 @@ export function Contact () {
             setLoader(false)
             return
         }else{        
-            // emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', emailData, 'YOUR_USER_ID')
-            //     .then((response) => {
-            //         console.log('Email sent successfully:', response.status, response.text);
-            //     }, (error) => {
-            //         console.error('Error sending email:', error);
-            //     });
+            emailjs.send('service_5pof7u5', 'template_umwfunz', data, 'IQYl2IeFWUvZUAqRt6P-R')
+                .then((response) => {
+                    setFinal(true)
+                    setLoader(false)
+                }, (error) => {
+                    setLoader(false)
+                });
         }
     }
     
     return (
         <div className="contact-container">
+            <link rel="preload" href={photo} as="image" />
             <h1>Contacto</h1>
 
             <div className="box">
                 {!isTablet &&
-                    <img src={photo} alt="ILLUSTRATION" />
+                    <img className="illustration" src={photo} alt="ILLUSTRATION" />
                 }
 
                 <div className="form">
@@ -120,8 +123,8 @@ export function Contact () {
                             id="message" 
                             value={data.message}
                             onChange={handleInputChange}
-                            rows="4" // Puedes ajustar el número de líneas visibles inicialmente
-                            cols="50" // Puedes ajustar el ancho del textarea
+                            rows="4"
+                            cols="50"
                         ></textarea>
                         {errors.message && <p className="error">{errors.message}</p>}
                     </div>
@@ -129,7 +132,7 @@ export function Contact () {
                     {loader ?
                         <BeatLoader style={{alignSelf:"center"}} color='black' size={20} speedMultiplier={0.7}/>
                         :
-                        <div className="button" onClick={()=>handleSubmit()}>Mandar mensaje</div>
+                        <div className="button" onClick={()=>!final ? handleSubmit() : null}>{!final ? "Mandar mensaje" : "¡Enviado!"}</div>
                     }
                 </div>
 
