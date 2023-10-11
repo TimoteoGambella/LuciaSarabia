@@ -88,6 +88,7 @@ export function Contact () {
     
     return (
         <div className="contact-container">
+            <link rel="preload" href={photo} as="image" />
             <h1>Contacto</h1>
 
             <div className="box">
