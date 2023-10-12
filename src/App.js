@@ -15,7 +15,7 @@ import { PreloadImages } from './components/PreloadImg';
 function App() {
 
   document.addEventListener("contextmenu", function(e){e.preventDefault()})
-  document.addEventListener("touchstart", function(e){e.preventDefault()}, {passive: false})
+  document.addEventListener("touchstart", function(e){if(e.target.name==="IMG"){e.preventDefault()}}, {passive: false})
 
   return (
     <WebContext>
