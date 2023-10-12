@@ -183,6 +183,7 @@
         width: 30%;
         align-self: flex-end;
         margin-top: 64px;
+        pointer-events: none;
         @media (max-width:620px){
             width: 100%;
             max-width: 110px;

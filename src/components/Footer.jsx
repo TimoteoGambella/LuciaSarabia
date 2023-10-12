@@ -33,7 +33,7 @@ export function Footer () {
                 <img onClick={()=>window.open("https://www.instagram.com/luciasarabiaaa/")} style={{width:isTablet&&"16px"}} src={instagram} alt="INSTAGRAM" />
             </div>
         </div>
-        <img src={banner} alt="BANNER" style={{width:"100%"}}/>
+        <img src={banner} alt="BANNER" style={{width:"100%", pointerEvents:"none"}}/>
         </>
     )
 }

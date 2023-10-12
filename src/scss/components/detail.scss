@@ -54,6 +54,7 @@
             img{
                 width: 100%;
                 max-width: 789px;
+                pointer-events: none;
                 @media (max-width:801px){
                     max-width: none;
                 }
@@ -178,6 +179,7 @@
             img{
                 width: 378px;
                 max-width: 378px;
+                pointer-events: none;
             }
             @media (max-width: 1000px){
                 gap: 16px;

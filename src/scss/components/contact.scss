@@ -110,6 +110,7 @@
         img{
             width: 100%;
             max-width: 350px;
+            pointer-events: none;
             @media (max-width: 420px){
                 max-width: 200px;
             }
