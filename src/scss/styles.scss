@@ -25,6 +25,9 @@ body{
     flex-direction: column;
     width: 100%;
 }
+img{
+    pointer-events: none !important;
+}
 
 
 @import "./components/gallery.scss";
