@@ -86,7 +86,7 @@ export function Header (){
                     </>
                     :  isTablet &&
                         <>
-                            <img style={{padding:"28px 0px"}} onClick={()=>{setMenu(false);navigate("/")}} src={logo} alt="LOGO" />
+                            <img className="logo" style={{padding:"28px 0px"}} onClick={()=>{setMenu(false);navigate("/")}} src={logo} alt="LOGO" />
 
                             <img onClick={()=>setMenu(!menu)} src={menuLogo} alt="MENU" />
                             {menu && 

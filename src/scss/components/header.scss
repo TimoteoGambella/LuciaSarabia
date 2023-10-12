@@ -24,6 +24,10 @@
         max-height: 178px;
         min-width: 280px;
         cursor: pointer;
+        @media (max-width: 769px){
+            max-width: 200px;
+            min-width: auto;
+        }
     }
     nav{
         display: flex;
