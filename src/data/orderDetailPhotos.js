@@ -24,3 +24,5 @@ export const orderDetailPhotos3 = {
     1: [2, 3],
     2: []
 }
+/* Primero en json, después en collaborators si agregas uno, después en photos (incluyendo las fotos en el github) y por último en esta página si tiene un orden distinto. */
+
