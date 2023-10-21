@@ -28,10 +28,10 @@ export function Bio () {
                         <div className="box2">
                             <h2>Trayectoria</h2>
                             <ul>
-                                <li>2019: Portafolio Domêstika, Jóvenes Talentos México 2019.</li>
-                                <li>2021: Canturía, Arrullos y Poemas, editado por Veleta Roja (España).</li>
-                                <li>2022: Lista larga de la Exposición de Ilustradores 2022, Bologna Children’s Book Fair</li>
-                                <li>2022: Residencia artística y Coediciones en La Ceiba Gráfica (Veracruz, México)</li>
+                                <li><span>2019</span>: Portafolio Domêstika, Jóvenes Talentos México 2019.</li>
+                                <li><span>2021</span>: Canturía, Arrullos y Poemas, editado por Veleta Roja (España).</li>
+                                <li><span>2022</span>: Lista larga de la Exposición de Ilustradores 2022, Bologna Children’s Book Fair</li>
+                                <li><span>2022</span>: Residencia artística y Coediciones en La Ceiba Gráfica (Veracruz, México)</li>
                             </ul>
                         </div>
                     </div>

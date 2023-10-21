@@ -107,7 +107,7 @@ export function Detail () {
 
                     {!detail800 && collaboratorLogo[data[id].collaborators[0]]!==undefined &&
                         <>
-                            <h5>Colaboradores</h5>
+                            <h5>{data[id].convocatoria?"Convocatoria":"Colaboradores"}</h5>
                             <img src={collaboratorLogo[data[id].collaborators[0]]} alt="COLLABORATOR" />
                         </>
                     }
@@ -137,7 +137,7 @@ export function Detail () {
 
                 {detail800 && collaboratorLogo[data[id].collaborators[0]]!==undefined &&
                     <div className="collaborator-detail800">
-                        <h5>Colaboradores</h5>
+                        <h5>{data[id].convocatoria?"Convocatoria":"Colaboradores"}</h5>
                         <img src={collaboratorLogo[data[id].collaborators[0]]} alt="COLLABORATOR" />
                     </div>                
                 }

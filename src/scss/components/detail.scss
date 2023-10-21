@@ -82,7 +82,7 @@
                 width: 100%;
             }
             p{
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: 500;
                 line-height: 150%;
                 margin-top: 32px;
@@ -100,7 +100,7 @@
             img{
                 max-width: 215px;
                 align-self: center;
-                margin-top: 66px;
+                margin-top: 32px;
             }
         }
         .infoDetail800{
@@ -177,15 +177,13 @@
             gap: 32px;
             margin-top: 64px;
             img{
-                width: 378px;
-                max-width: 378px;
+                height: 320px;
                 pointer-events: none;
             }
             @media (max-width: 1000px){
                 gap: 16px;
                 img{
-                    width: 170px;
-                    max-width: 170px;
+                    height: 200px;
                 }
             }
         }
