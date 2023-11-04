@@ -22,13 +22,13 @@ export function Bio () {
                     <div className="info">
                         <div className="box1">
                             <h2>Biografía</h2>
-                            <p>Nací en el pequeño pueblo de Comala hace 28 años, y sigo haciendo a diario lo que me gustaba hacer desde entonces: Dibujar y Escribir. Crecí entre dos volcanes y un mar, rodeada de la fantasía de cuatro elementos: El ajedréz, los árboles, las casas y el viaje; esto conforma mi universo narrativo, de esos ingredientes están hechos mis sueños.</p>
+                            <p>Nací en el pequeño pueblo de Comala hace 28 años, y sigo haciendo a diario lo que me gustaba hacer desde entonces: dibujar y escribir. Crecí entre dos volcanes y un mar, rodeada de la fantasía de cuatro elementos: el ajedrez, los árboles, las casas y el viaje; esto conforma mi universo narrativo, de esos ingredientes están hechos mis sueños.</p>
                         </div>
 
                         <div className="box2">
                             <h2>Trayectoria</h2>
                             <ul>
-                                <li><span>2019</span>: Portafolio Domêstika, Jóvenes Talentos México 2019.</li>
+                                <li><span>2019</span>: Portfolio Domêstika, Jóvenes Talentos México 2019</li>
                                 <li><span>2021</span>: Canturía, Arrullos y Poemas, editado por Veleta Roja (España).</li>
                                 <li><span>2022</span>: Lista larga de la Exposición de Ilustradores 2022, Bologna Children’s Book Fair</li>
                                 <li><span>2022</span>: Residencia artística y Coediciones en La Ceiba Gráfica (Veracruz, México)</li>

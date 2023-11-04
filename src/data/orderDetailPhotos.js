@@ -20,7 +20,7 @@ export const orderDetailPhotos2 = {
 }
 
 export const orderDetailPhotos3 = {
-    0: [2, 3, 4, 5, 6, 7],
+    0: [2, 3, 4, 5],
     1: [1, 2, 4, 5, 7, 8],
     2: [2, 3]
 }
