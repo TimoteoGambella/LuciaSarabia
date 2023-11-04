@@ -42,7 +42,7 @@ export function Bio () {
                         <img className="mainPhoto" src={mainPhoto} alt="BIO" />
                         <div>
                             <h2>Biografía</h2>
-                            <p>“Nací en el pequeño pueblo de Comala hace 28 años, y sigo haciendo a diario lo que me gustaba hacer desde entonces: Dibujar y Escribir. Crecí entre dos volcanes y un mar, rodeada de la fantasía de cuatro elementos: El ajedréz, los árboles, las casas y el viaje; esto conforma mi universo narrativo, de esos ingredientes están hechos mis sueños.”</p>
+                            <p>Nací en el pequeño pueblo de Comala hace 28 años, y sigo haciendo a diario lo que me gustaba hacer desde entonces: Dibujar y Escribir. Crecí entre dos volcanes y un mar, rodeada de la fantasía de cuatro elementos: El ajedréz, los árboles, las casas y el viaje; esto conforma mi universo narrativo, de esos ingredientes están hechos mis sueños.</p>
                         </div>
                     </div>
 

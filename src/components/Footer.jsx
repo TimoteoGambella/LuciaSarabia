@@ -10,12 +10,6 @@ export function Footer () {
     return(
         <>
         <div style={{background:window.location.pathname.startsWith("/proj")&&"#F9F8F4"}} className={`footer-container ${isTablet&&"tablet"} ${isMobile&&"mobile"}`}>
-            <img onClick={()=>{
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            }} className="logo" src={logo} alt="LOGO" />
 
             {!isTablet &&
                 <p>Made with <span>♥</span> by <span onClick={()=>window.open("https://www.behance.net/erickmagallan")}>Erick Magallán</span></p>
@@ -28,6 +22,13 @@ export function Footer () {
                     </p>
                 </div>
             }
+
+            <img onClick={()=>{
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }} className="logo" src={logo} alt="LOGO" />
 
             <div className="networks">
                 <img onClick={()=>window.open("https://www.instagram.com/luciasarabiaaa/")} style={{width:isTablet&&"16px"}} src={instagram} alt="INSTAGRAM" />
